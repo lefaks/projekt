@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Petrij</string>
+
+    <string-array name="categories">
+        <item>Pathogenic bacteria</item>
+        <item>Non-pathogenic</item>
+
+    </string-array>
+
+    <string name="prikazi1">Naziv bakterije</string>
+    <string name="prikazi2">Opis</string>
+    <string name="botun">Unesi </string>
+
+
+</resources>
