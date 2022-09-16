@@ -24,7 +24,8 @@
             android:layout_margin="30dp"
             android:text="@string/prikazi1"
             android:layout_gravity="center"
-            android:textSize="24sp"/>
+            android:textSize="24sp"
+                  />
 
         <EditText
             android:layout_width="match_parent"
@@ -32,7 +33,8 @@
             android:id="@+id/uno"
             android:inputType="text"
             android:background="@color/black"
-
+            android:textColor="@color/teal_700"
+            android:layout_gravity="center"
         />
         <TextView
             android:id="@+id/two"
@@ -43,14 +45,17 @@
             android:text="@string/prikazi2"
             android:layout_gravity="center"
             android:textSize="24sp"
+
             />
 
         <EditText
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
             android:background="@color/black"
             android:id="@+id/duo"
             android:inputType="text"
+            android:textColor="@color/teal_700"
+            android:layout_gravity="center"
             />
 
 
@@ -60,6 +65,10 @@
                 android:textSize="24sp"
                 android:text="@string/botun"
                 android:onClick="onClickSubmit"
+                android:layout_gravity="center"
+                android:textColor="@color/teal_700"
+                android:background="@color/gray"
+
                 />
     </LinearLayout>
 

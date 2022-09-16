@@ -19,7 +19,7 @@ public class UnosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_unos);
     }
 
-    private PetrijDatabase petrijDatabase;
+    private PetrijDatabase petrijDatabase;  // mora se dohvatit
     private Cursor bacteriumCursor ;
 
 
@@ -34,6 +34,8 @@ public class UnosActivity extends AppCompatActivity {
         Executors.newSingleThreadExecutor().execute(new Runnable() {
             @Override
             public void run() {
+                petrijDatabase = PetrijDatabase.getInstance(UnosActivity.this);
+
                 Bacterium newOne = new Bacterium(unos, R.drawable.unknown, true, true, true, "unkown", "unknown", false, unos2
                 );     //constructor
                 petrijDatabase.bacteriumDao().insertBacterium(newOne);
@@ -55,9 +57,6 @@ public class UnosActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
 
 
